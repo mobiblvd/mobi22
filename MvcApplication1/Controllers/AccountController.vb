@@ -10,9 +10,10 @@ Imports WebMatrix.WebData
 <InitializeSimpleMembership()> _
 Public Class AccountController
     Inherits System.Web.Mvc.Controller
-
+    /
     '
     ' GET: /Account/Login
+    
 
     <AllowAnonymous()> _
     Public Function Login(ByVal returnUrl As String) As ActionResult
@@ -77,7 +78,7 @@ Public Class AccountController
         ' If we got this far, something failed, redisplay form
         Return View(model)
     End Function
-
+    /*Testing*/
     '
     ' POST: /Account/Disassociate
 
